@@ -54,6 +54,7 @@ fi
 echo -e "${WHITB}\n¦ installing source ... \n\n\n\n${CNIL}"
 sudo apt-get update -y
 sudo apt-get upgrade -y
+cd inc ; rm -rif Script.lua;rm -rif Run.lua;rm -rif functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Run.lua ;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Script.lua;cd ..
 echo -e "\x1B[01;90m\n¦ software-properties-common installing ... \n\x1B[0m"
 sudo apt-get install software-properties-common -y
 echo -e "\x1B[01;90m\n¦ ubuntu-toolchain installing ...\n \x1B[0m"
