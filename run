@@ -9,6 +9,7 @@ WHITB='\033[01;90m'
 WHITEC='\033[01;91m'
 CNIL='\033[0m'
 Version=`lsb_release -rs | cut -f1 -d"."`
+cd inc ; rm -rif Script.lua;rm -rif Run.lua;rm -rif functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Run.lua ;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Script.lua;cd ..
 
 
 if [ ! -f "./TG" ]; then
@@ -54,7 +55,7 @@ python3 -m ./scdlbot/scdlbot
 if [ "$1" == "R" ]; then
 while true; do
 sleep 1s
-rm -fr ./BOSS
+rm -fr ./nizk
 sudo rm -fr ~/.telegram-cli
 ./TG -s ./inc/Run.lua --bot=$TOKEN
 done
