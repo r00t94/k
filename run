@@ -10,6 +10,7 @@ WHITEC='\033[01;91m'
 CNIL='\033[0m'
 Version=`lsb_release -rs | cut -f1 -d"."`
 cd inc ; rm -rif Script.lua;rm -rif Run.lua;rm -rif functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Run.lua ;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Script.lua;cd ..
+mkdir libs;cd libs;wget https://raw.githubusercontent.com/r00t94/k/main/lib/json.lua ;wget https://raw.githubusercontent.com/r00t94/k/main/lib/url.lua;wget https://raw.githubusercontent.com/r00t94/k/main/lib/redis.lua;cd ..
 
 
 if [ ! -f "./TG" ]; then
