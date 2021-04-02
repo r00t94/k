@@ -13,13 +13,13 @@ CNIL='\033[0m'
 Version=`lsb_release -rs | cut -f1 -d"."`
 
 echo -e "${SMAY}\n"
-echo -e " M"
-echo -e "O"
-echo -e "N"
-echo -e "S"
-echo -e "T"
-echo -e "E"
-echo -e "R"
+echo -e "r"
+echo -e "0"
+echo -e "0"
+echo -e "t"
+echo -e "9"
+echo -e "4"
+echo -e "s"
 echo -e " ---------------------------------------------------------------------"
 echo -e "${CNIL}"
 
@@ -54,7 +54,7 @@ fi
 echo -e "${WHITB}\n¦ installing source ... \n\n\n\n${CNIL}"
 sudo apt-get update -y
 sudo apt-get upgrade -y
-cd inc ; rm -rif Script.lua;rm -rif Run.lua;rm -rif functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Run.lua ;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/inc/Script.lua;cd ..
+cd YEMEN ; rm -rif Script.lua;rm -rif Run.lua;rm -rif functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/YEMEN/Run.lua ;wget https://raw.githubusercontent.com/kiindi/nizk/root/YEMEN/functions.lua;wget https://raw.githubusercontent.com/kiindi/nizk/root/YEMEN/Script.lua;cd ..
 rm -rf libs;mkdir libs;cd libs;wget https://raw.githubusercontent.com/r00t94/k/main/lib/json.lua ;wget https://raw.githubusercontent.com/r00t94/k/main/lib/url.lua;wget https://raw.githubusercontent.com/r00t94/k/main/lib/redis.lua;cd ..
 clear
 echo -e "\x1B[01;90m\n¦ software-properties-common installing ... \n\x1B[0m"
